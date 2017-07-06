@@ -11,9 +11,14 @@ public class Controller {
         return "Hello World!";
     }
 	
-	 @RequestMapping("/test")
-	    public String testController(){
+	@RequestMapping("/test")
+	public String testController(){
 	    	return "this is test page!";
+	}
+	
+	@RequestMapping("/login")
+	public String loginController(){
+	    	return "this is login page!";
 	}
     
    
