@@ -1,14 +1,20 @@
 package com.trendy.controller;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController
-public class Controller {
+
+@Controller
+public class WebController {
 	
 	@RequestMapping("/")
-    public String greeting() {
-        return "Hello World!";
+	@ResponseBody
+    public String greeting(Model model) {
+		System.out.println("greeting!");
+        return "welcome";
     }
 	
 	@RequestMapping("/test")
