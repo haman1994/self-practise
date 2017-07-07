@@ -11,8 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class WebController {
 	
 	@RequestMapping("/")
-	@ResponseBody
-    public String greeting(Model model) {
+    public String greeting() {
 		System.out.println("greeting!");
         return "welcome";
     }
