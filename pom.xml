@@ -39,6 +39,13 @@
 			<artifactId>nekohtml</artifactId>
 			<version>1.9.22</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.unbescape/unbescape -->
+		<dependency>
+			<groupId>org.unbescape</groupId>
+			<artifactId>unbescape</artifactId>
+			<version>1.1.0.RELEASE</version>
+		</dependency>
+
 	</dependencies>
 
 	<build>
